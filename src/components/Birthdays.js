@@ -63,15 +63,15 @@ const Birthdays = ({ display }) => {
             const a_day = (day) => data.users.filter((user) => birthday(user) === `${month}-${day}`);
             const futureExtraDate = (15-(daysThisMonth-currentDate));
             const lastExtraDate = (daysLastMonth+(currentDate-15))
-            const birthdayBefore = (user, date) => (getDay(user) < date) ? true : false;
-            const birthdayOnOrAfter = (user, date) => (getDay(user) >= date) ? true : false;
-            const birthdayAfter = (user, date) => (getDay(user) > date) ? true : false;
-            const birthdayInMonth = (user) => (getMonth(user) === month) ? true : false;
-            const birthdayPrior14Days = (user) => (birthdayBefore(user, currentDate) && birthdayOnOrAfter(user, prior14DaysOrLess)) ? true : false;
-            const past = data.users.filter((user) => (birthdayInMonth(user) && birthdayPrior14Days(user)));
-            const lastMonthExtra = data.users.filter((user) => ((getMonth(user) === pastMonth) && birthdayAfter(user, lastExtraDate)));
-            const future = data.users.filter((user) => (birthdayInMonth(user) && birthdayAfter(user, currentDate) && birthdayBefore(user, fourteenOrLess)));
-            const futureMonthExtra = data.users.filter((user) => ((getMonth(user) === nextMonth) && birthdayBefore(user, futureExtraDate)));
+            const bDayBefore = (user, date) => (getDay(user) < date) ? true : false;
+            const bDayOnOrAfter = (user, date) => (getDay(user) >= date) ? true : false;
+            const bDayAfter = (user, date) => (getDay(user) > date) ? true : false;
+            const bDayInMonth = (user) => (getMonth(user) === month) ? true : false;
+            const bDayPrior14Days = (user) => (bDayBefore(user, currentDate) && bDayOnOrAfter(user, prior14DaysOrLess)) ? true : false;
+            const past = data.users.filter((user) => (bDayInMonth(user) && bDayPrior14Days(user)));
+            const lastMonthExtra = data.users.filter((user) => ((getMonth(user) === pastMonth) && bDayAfter(user, lastExtraDate)));
+            const future = data.users.filter((user) => (bDayInMonth(user) && bDayAfter(user, currentDate) && bDayBefore(user, fourteenOrLess)));
+            const futureMonthExtra = data.users.filter((user) => ((getMonth(user) === nextMonth) && bDayBefore(user, futureExtraDate)));
             const alphaSort = (array) => array.sort((a,b) => (name(a).firstName > name(b).firstName) ? 1 : -1);
             const daySort = (array) => array.sort((a,b) => (getDay(a) > getDay(b)) ? 1 : -1);
             const a_daySorted = (day) => alphaSort(a_day(day));
