@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/BirthdayWidget/static/css/main.f12cb889.chunk.css",
+    "main.js": "/BirthdayWidget/static/js/main.fa8f2004.chunk.js",
+    "main.js.map": "/BirthdayWidget/static/js/main.fa8f2004.chunk.js.map",
+    "runtime-main.js": "/BirthdayWidget/static/js/runtime-main.619121de.js",
+    "runtime-main.js.map": "/BirthdayWidget/static/js/runtime-main.619121de.js.map",
+    "static/js/2.52d4279b.chunk.js": "/BirthdayWidget/static/js/2.52d4279b.chunk.js",
+    "static/js/2.52d4279b.chunk.js.map": "/BirthdayWidget/static/js/2.52d4279b.chunk.js.map",
+    "static/js/3.aa7b8c37.chunk.js": "/BirthdayWidget/static/js/3.aa7b8c37.chunk.js",
+    "static/js/3.aa7b8c37.chunk.js.map": "/BirthdayWidget/static/js/3.aa7b8c37.chunk.js.map",
+    "index.html": "/BirthdayWidget/index.html",
+    "static/css/main.f12cb889.chunk.css.map": "/BirthdayWidget/static/css/main.f12cb889.chunk.css.map",
+    "static/js/2.52d4279b.chunk.js.LICENSE.txt": "/BirthdayWidget/static/js/2.52d4279b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/BirthdayWidget/static/media/VodafoneRgBd.c34f7458.ttf",
+    "static/media/chevron-right.b40ddee8.svg": "/BirthdayWidget/static/media/chevron-right.b40ddee8.svg",
+    "static/media/gift.edb30b52.png": "/BirthdayWidget/static/media/gift.edb30b52.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.619121de.js",
+    "static/js/2.52d4279b.chunk.js",
+    "static/css/main.f12cb889.chunk.css",
+    "static/js/main.fa8f2004.chunk.js"
+  ]
+}
