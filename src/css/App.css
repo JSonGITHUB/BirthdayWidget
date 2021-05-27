@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "VodafoneRg";
+    src: local("VodafoneRg"),
+        url("../assets/fonts/VodafoneRg.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "VodafoneRgBd";
+    src: local("VodafoneRgBd"),
+        url("../assets/fonts/VodafoneRgBd.ttf") format("truetype");
+    font-weight: bold;
+}
+.App {
+    font-family: VodafoneRg;
+    text-align: center;
+    color: #333333;
+    font-weight:600;
+}
+.App-logo {
+    height: 125px;
+    pointer-events: none;
+    margin-bottom: -8px;
+}
+.App-header {
+    width: 100%;
+    position:fixed;
+}
+.App-navigation {
+    top:146px;
+    width: 100%;
+    position:fixed;
+    height: 25%;
+    background-color: #E8E8E8; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#E8E8E8, #FFFFFF);
+}
+.App-list {
+    position: absolute;
+    width: 100%;
+    margin-top:315px;
+    max-height: calc(100% - 315px);
+    overflow-y: scroll;
+}
+.list {
+    background-color: #E8E8E8; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#E8E8E8, #FFFFFF);
+}
+.fontSize17 {
+    font-size: 17px;
+}
+.navigationTitle {
+    padding-top: 25px;
+    font-size: 35px;
+    color:#D80027;
+    margin-bottom: 30px;
+}
+.jobTitle {
+    min-height:42px;
+    margin-top: 5px;
+    color:#666666;
+}
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+    display: inline-block;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    vertical-align: top;
+}
+.fl-left {
+    float: left;
+}
+.fl-center {
+    float: center;
+}
+.max800 {
+    max-width: 800px;
+}
+.max400 {
+    max-width: 400px;
+}
+.userInfo {
+    max-width: 300px;
+    display: flex;
+    color:#000000;
+    margin-bottom: 30px;
+}
+.flexContainer {
+    display: flex;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.m-30 {
+    margin: 30px;
+}
+.m-20 {
+    margin: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.ml-50 {
+    margin-left: 100px;
+}
+.mr-50 {
+    margin-right: 100px;
+}
+.avatar {
+    height:98px;
+    border-radius: 50%;
+}
+.fullWidth {
+    width: 100%;
+}
+.navagation {
+    max-width: 400px;
+    display: flex;
+    color:#D80027;
+    font-size: 18px;
+    margin: auto;
+}
+.flex2Column {
+    height: auto;
+    min-height: 2px;
+    flex: 50%;
+}
+.flex3Column {
+    height: auto;
+    min-height: 2px;
+    flex: 75%;
+}
+.leftJustify {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-7 {
+    margin-top: 7px;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.App-link {
+    color: #61dafb;
+}
+.redLine {
+    height: 6px;
+    width: 100%;
+    background-color: #D80027;
+}
+.chevron {
+    vertical-align: middle;
+}
+.bold {
+    font-family: VodafoneRgBd;
+    font-weight: bold;
+}
