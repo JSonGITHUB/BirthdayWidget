@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import Birthday from './Birthday.js';
 import ShowMore from './ShowMore.js';
@@ -23,7 +23,7 @@ import {
 } from './utils/dateUtils.js';
 
 const Birthdays = ({ display }) => {
-
+    const myRef = useRef();
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -51,6 +51,9 @@ const Birthdays = ({ display }) => {
             });
     },[]);
     useEffect(() => {
+        if (myRef.current) {
+            myRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+        }
         if (data !== null) {
             const name = (user) => { 
                 const names = user.name.split(' ')
@@ -151,6 +154,7 @@ const Birthdays = ({ display }) => {
             { 
                 (lists.list1.length > 0) 
                     ? <div className='mb-50'>
+                            <div ref={myRef}></div>
                             <div className='block max400'>
                                 {lists.list1}
                             </div>

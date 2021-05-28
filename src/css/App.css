@@ -39,6 +39,7 @@
     margin-top:315px;
     max-height: calc(100% - 315px);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .list {
     background-color: #E8E8E8; /* For browsers that do not support gradients */
